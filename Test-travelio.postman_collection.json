@@ -1,0 +1,425 @@
+{
+	"info": {
+		"_postman_id": "b1da80c4-b786-41f6-a836-5f9910df792e",
+		"name": "Test-travelio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ALL Wishlist Book",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5555/wishlist",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5555",
+					"path": [
+						"wishlist"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "ALL Wishlist Book",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5555/wishlist",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"wishlist"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "328"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"148-xp6wTJGR9Qv0clwX2eRFg9sZdk0\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 19 Sep 2023 11:04:55 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"count\": 1,\n    \"data\": [\n        {\n            \"_id\": \"65098041c0b80fbce8a6e11b\",\n            \"title\": \"test\",\n            \"thumbnail\": \"http://books.google.com/books/content?id=nK1iDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api\",\n            \"authors\": \"adam\",\n            \"rating\": 5,\n            \"ratingsCount\": 99,\n            \"createdAt\": \"2023-09-19T11:04:33.230Z\",\n            \"updatedAt\": \"2023-09-19T11:04:33.230Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Detail Wishlist Book",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5555/wishlist/650997f8ecb3eb40b29d590b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5555",
+					"path": [
+						"wishlist",
+						"650997f8ecb3eb40b29d590b"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Detail Wishlist Book",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5555/wishlist/650997f8ecb3eb40b29d590b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"wishlist",
+								"650997f8ecb3eb40b29d590b"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "316"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"13c-L6raAUzcFT6latZfI/3n0Y1ie4w\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 19 Sep 2023 12:54:59 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"_id\": \"650997f8ecb3eb40b29d590b\",\n        \"title\": \"test\",\n        \"thumbnail\": \"http://books.google.com/books/content?id=nK1iDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api\",\n        \"authors\": \"adam\",\n        \"rating\": 5,\n        \"ratingsCount\": 99,\n        \"createdAt\": \"2023-09-19T12:45:44.836Z\",\n        \"updatedAt\": \"2023-09-19T12:45:44.836Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Wishlist Book",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5555/wishlist/650997f8ecb3eb40b29d590b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5555",
+					"path": [
+						"wishlist",
+						"650997f8ecb3eb40b29d590b"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete Wishlist Book",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5555/wishlist/650997f8ecb3eb40b29d590b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"wishlist",
+								"650997f8ecb3eb40b29d590b"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "39"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"27-2sU+wH8LsO2HgYqDa0daGODIV30\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 19 Sep 2023 12:55:52 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Book deleted successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "POST Wishlist Book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"test\",\r\n    \"authors\": \"adam\",\r\n    \"thumbnail\": \"http://books.google.com/books/content?id=nK1iDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api\",\r\n    \"rating\": 5,\r\n    \"ratingsCount\": 99\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5555/wishlist",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5555",
+					"path": [
+						"wishlist"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "POST Wishlist Book",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"test\",\r\n    \"authors\": \"adam\",\r\n    \"thumbnail\": \"http://books.google.com/books/content?id=nK1iDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api\",\r\n    \"rating\": 5,\r\n    \"ratingsCount\": 99\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5555/wishlist",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"wishlist"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "354"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"162-N6ErVLcCRaKNSQ81OX+N9mPi0ZI\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 19 Sep 2023 13:09:56 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Book created successfully\",\n    \"data\": {\n        \"title\": \"test\",\n        \"thumbnail\": \"http://books.google.com/books/content?id=nK1iDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api\",\n        \"authors\": \"adam\",\n        \"rating\": 5,\n        \"ratingsCount\": 99,\n        \"_id\": \"65099da3645aa850a32a4989\",\n        \"createdAt\": \"2023-09-19T13:09:55.947Z\",\n        \"updatedAt\": \"2023-09-19T13:09:55.947Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Wishlist Book",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"test ubah\",\r\n    \"authors\": \"adam\",\r\n    \"thumbnail\": \"http://books.google.com/books/content?id=nK1iDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api\",\r\n    \"rating\": 5,\r\n    \"ratingsCount\": 99\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5555/wishlist/650999f71adcf9ebe0bfa7db",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5555",
+					"path": [
+						"wishlist",
+						"650999f71adcf9ebe0bfa7db"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update Wishlist Book",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"test ubah\",\r\n    \"authors\": \"adam\",\r\n    \"thumbnail\": \"http://books.google.com/books/content?id=nK1iDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api\",\r\n    \"rating\": 5,\r\n    \"ratingsCount\": 99\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5555/wishlist/650999f71adcf9ebe0bfa7db",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"wishlist",
+								"650999f71adcf9ebe0bfa7db"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "39"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"27-BFs+MWHxDGv7PXUqHkc9tY2JotM\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 19 Sep 2023 13:05:51 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Book updated successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "API",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}

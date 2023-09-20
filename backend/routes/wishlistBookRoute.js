@@ -56,11 +56,10 @@ router.post('/', async (request, response) => {
   try {
     if (
       !request.body.title ||
-      !request.body.authors ||
-      !request.body.thumbnail
+      !request.body.authors
     ) {
       return response.status(400).send({
-        message: 'Send all required fields: title, authors, thumbnail',
+        message: 'Send all required fields: title, authors',
       });
     }
     const addWishlistBook = {
@@ -89,11 +88,10 @@ router.put('/:id', async (request, response) => {
   try {
     if (
       !request.body.title ||
-      !request.body.authors ||
-      !request.body.thumbnail
+      !request.body.authors
     ) {
       return response.status(400).send({
-        message: 'Send all required fields: title, authors, thumbnail',
+        message: 'Send all required fields: title, authors',
       });
     }
 

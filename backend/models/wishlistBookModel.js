@@ -8,7 +8,7 @@ const wishlistBookSchema = mongoose.Schema(
     },
     thumbnail: {
       type: String,
-      required: true,
+      required: false,
     },
     authors: {
       type: String,
